@@ -1,0 +1,77 @@
+#header{
+	height:75px;
+}
+
+#emoji-bar{
+	position: fixed;
+	bottom:0;
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	padding:10px;
+}
+
+body {
+  font-family: helvetica;
+  background: #eee;
+  text-align: center;
+}
+
+input{
+	width:75px;
+}
+input:focus {
+  border: 3px solid black;
+  outline:none;
+}
+
+.hide {
+  position: absolute;
+  left: -10000px;
+}
+
+label {
+  display: inline-block;
+  background: gray;
+  margin: 25px;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+/*PHOTOS START*/
+
+#photos {
+	  cursor: url("images/happy.png"), auto;
+
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+#photos input {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin:4px;
+
+}
+#photos input:hover {
+  cursor: url("images/happy.png"), auto;
+}
+#photos input:focus {
+  border: 3px solid green;
+  outline:none;
+}
