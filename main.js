@@ -21,13 +21,16 @@ function changeEmoji(newEmoji){
 	     	this.style.cursor = style;
 	    	console.log("hereerer", style);
 	    }
-	    // elms[i].onmouseout = function(){
-	    //   this.className='ui-state-default'
-	    // }
 	}
 }
 
+var magicNum = 11; //(total images + 1)
+
 function removeImage(photo){
 	console.log("asdfasdfasdf", photo);
-	photo.src = "";
+	photo.remove();
+	console.log(document.getElementById("photos").childNodes.length);
+	if(document.getElementById("photos").childNodes.length === magicNum){
+		document.getElementById('body').style.backgroundImage = "url('images/CoLabLogo.jpg')";
+	}
 }
