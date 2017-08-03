@@ -31,6 +31,16 @@ function removeImage(photo){
 	photo.remove();
 	console.log(document.getElementById("photos").childNodes.length);
 	if(document.getElementById("photos").childNodes.length === magicNum){
-		document.getElementById('body').style.backgroundImage = "url('images/CoLabLogo.jpg')";
+		//document.getElementById('body').style.backgroundImage = "url('images/CoLabLogo.jpg')";
+		// var container = document.createElement("div");
+		// div.innerHTML = "Thanks for Playing";
+		// div.style.height = "100px";
+		// document.getElementById("photos").appendChild(div);
+		var div = document.createElement("div");
+		div.innerHTML = "Thanks for Playing";
+		div.style.height = "200px";
+		div.style.textAlign = "center";
+		div.style.margin = "50px";
+		document.getElementById("photos").appendChild(div);
 	}
 }

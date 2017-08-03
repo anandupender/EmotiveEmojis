@@ -10,8 +10,12 @@
 	padding:10px;
 }
 
+.emoji-button{
+	border: 3px solid black;
+}
+
 body {
-  font-family: helvetica;
+	font-family: 'Comfortaa', cursive;
   background: #eee;
   text-align: center;
 }
@@ -20,7 +24,7 @@ input{
 	width:75px;
 }
 input:focus {
-  border: 3px solid black;
+  border: 3px solid #F32F96;
   outline:none;
 }
 
@@ -48,8 +52,8 @@ label {
 /*PHOTOS START*/
 
 #photos {
-	  cursor: url("images/happy.png"), auto;
-
+/*	  cursor: url("images/happy.png"), auto;
+*/
   /* Prevent vertical gaps */
   line-height: 0;
    
